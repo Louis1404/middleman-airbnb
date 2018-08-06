@@ -9,41 +9,22 @@ title: Le Wagon - Middleman
   </div>
 </div>
 
-<div class="container">
+<div class="container" id="home-flats">
+<h2 class="text-center">Recent flats</h2>
   <div class="row">
+  <% data.flats.each do |owner, flat| %>
     <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
-        <div class="card-category">Popular</div>
-        <div class="card-description">
-          <h2>Le Wagon Shanghai</h2>
-          <p>Very cool city, the best</p>
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>');">
+          <div class="card-category"><%= flat.city_name %></div>
+          <div class="card-description">
+            <h3><%= flat.name %></h3>
+            <p><%= flat.description %></p>
+          </div>
+          <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class:"card-user" %>
+          <%= link_to "", "flats/#{owner}.html", class: "card-link" %>
         </div>
-        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-        <a class="card-link" href="#" ></a>
       </div>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/copenhagen');">
-        <div class="card-category">Popular</div>
-        <div class="card-description">
-          <h2>Le Wagon Copenhagen</h2>
-          <p>Very cool city, the best</p>
-        </div>
-        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/eschults">
-        <a class="card-link" href="#" ></a>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/lisbon');">
-        <div class="card-category">Popular</div>
-        <div class="card-description">
-          <h2>Le Wagon Lisbon</h2>
-          <p>Very cool city, the best</p>
-        </div>
-        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/krokrob">
-        <a class="card-link" href="#" ></a>
-      </div>
-    </div>
+    <% end %>
   </div>
 </div>
 
@@ -61,27 +42,29 @@ title: Le Wagon - Middleman
             <label for="lastname">Your last name</label>
             <input type="text" id="lastname" class="form-control">
           </div>
-        </div>
-        <div class="form-group">
-          <label for="email">Your email</label>
-          <input type="email" id="email" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="password">Your password</label>
-          <input type="password" id="password" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="favorite">What's your favorite language?</label>
-          <div>
-            <select id="favorite" name="language" class="form-control">
-              <option value="ruby">Ruby</option>
-              <option value="css">CSS</option>
-              <option value="javascript">Javascript</option>
-            </select>
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input type="email" id="email" class="form-control">
           </div>
-        </div>
-        <input type="submit" value="Sign Up" class="btn btn-primary form-control">
-      </form>
+          <div class="form-group">
+            <label for="password">Your password</label>
+            <input type="password" id="password" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="favorite">What's your favorite language?</label>
+            <div>
+              <select id="favorite" name="language" class="form-control">
+                <option value="ruby">Ruby</option>
+                <option value="css">CSS</option>
+                <option value="javascript">Javascript</option>
+              </select>
+            </div>
+          </div>
+          <input type="submit" value="Sign Up" class="btn btn-primary form-control">
+        </form>
+      </div>
     </div>
   </div>
 </div>
+
+
