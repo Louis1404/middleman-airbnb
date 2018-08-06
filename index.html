@@ -23,7 +23,7 @@
     <a href="" class="navbar-wagon-item navbar-wagon-link">Host</a>
     <a href="" class="navbar-wagon-item navbar-wagon-link">Trips</a>
     <a href="" class="navbar-wagon-item navbar-wagon-link">Messages</a>
-    <a href="about.html" class="navbar-wagon-item navbar-wagon-link">Meet the team</a>
+    <a href="team.html" class="navbar-wagon-item navbar-wagon-link">Meet the team</a>
 
     <!-- Profile picture with dropdown list -->
     <div class="navbar-wagon-item">
@@ -49,41 +49,42 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container" id="home-flats">
+<h2 class="text-center">Recent flats</h2>
   <div class="row">
     <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
-        <div class="card-category">Popular</div>
-        <div class="card-description">
-          <h2>Le Wagon Shanghai</h2>
-          <p>Very cool city, the best</p>
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/paris');">
+          <div class="card-category">Paris, France</div>
+          <div class="card-description">
+            <h3>Sebastien's home</h3>
+            <p>Charming room in Montmartre</p>
+          </div>
+          <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="card-user" alt="Ssaunier" />
+          <a href="flats/ssaunier.html" class="card-link"></a>
         </div>
-        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-        <a class="card-link" href="#" ></a>
       </div>
-    </div>
     <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/copenhagen');">
-        <div class="card-category">Popular</div>
-        <div class="card-description">
-          <h2>Le Wagon Copenhagen</h2>
-          <p>Very cool city, the best</p>
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/tokyo');">
+          <div class="card-category">Tokyo, Japan</div>
+          <div class="card-description">
+            <h3>Boris' home</h3>
+            <p>Small flat in Tokyo</p>
+          </div>
+          <img src="https://kitt.lewagon.com/placeholder/users/papillard" class="card-user" alt="Papillard" />
+          <a href="flats/papillard.html" class="card-link"></a>
         </div>
-        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/eschults">
-        <a class="card-link" href="#" ></a>
       </div>
-    </div>
     <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/lisbon');">
-        <div class="card-category">Popular</div>
-        <div class="card-description">
-          <h2>Le Wagon Lisbon</h2>
-          <p>Very cool city, the best</p>
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/london');">
+          <div class="card-category">London, UK</div>
+          <div class="card-description">
+            <h3>Romain's home</h3>
+            <p>Nice flat in Piccadilly</p>
+          </div>
+          <img src="https://kitt.lewagon.com/placeholder/users/monsieurpaillard" class="card-user" alt="Monsieurpaillard" />
+          <a href="flats/monsieurpaillard.html" class="card-link"></a>
         </div>
-        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/krokrob">
-        <a class="card-link" href="#" ></a>
       </div>
-    </div>
   </div>
 </div>
 
@@ -101,30 +102,32 @@
             <label for="lastname">Your last name</label>
             <input type="text" id="lastname" class="form-control">
           </div>
-        </div>
-        <div class="form-group">
-          <label for="email">Your email</label>
-          <input type="email" id="email" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="password">Your password</label>
-          <input type="password" id="password" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="favorite">What's your favorite language?</label>
-          <div>
-            <select id="favorite" name="language" class="form-control">
-              <option value="ruby">Ruby</option>
-              <option value="css">CSS</option>
-              <option value="javascript">Javascript</option>
-            </select>
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input type="email" id="email" class="form-control">
           </div>
-        </div>
-        <input type="submit" value="Sign Up" class="btn btn-primary form-control">
-      </form>
+          <div class="form-group">
+            <label for="password">Your password</label>
+            <input type="password" id="password" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="favorite">What's your favorite language?</label>
+            <div>
+              <select id="favorite" name="language" class="form-control">
+                <option value="ruby">Ruby</option>
+                <option value="css">CSS</option>
+                <option value="javascript">Javascript</option>
+              </select>
+            </div>
+          </div>
+          <input type="submit" value="Sign Up" class="btn btn-primary form-control">
+        </form>
+      </div>
     </div>
   </div>
 </div>
+
+
 
     <div class="footer">
   <div class="footer-links">
